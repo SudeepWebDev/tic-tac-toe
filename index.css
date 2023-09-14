@@ -16,10 +16,14 @@
     --cornflowerblue: cornflowerblue;
     --warm-yellow: rgb(249, 202, 36);
     --vibrant-orange: rgb(240, 147, 43);
+    --theme: white
 
 }
 
+body {
+    background-color: var(--theme);
 
+}
 /* Header */
 header {
     display: flex;
@@ -40,7 +44,15 @@ header div {
 header #menu_bar {
     display: none;
 }
-
+/* Circle Icon */
+.circle {
+    width: 30px;
+    height: 30px;
+    background: conic-gradient(from 0.25turn, #f1c40f 50%, rgb(4, 39, 67) 50%);
+    border-radius: 50%;
+    position: relative;
+  }
+  
 .logo {
     background: linear-gradient(to bottom right, var(--p-bg-color-1), var(--p-bg-color-2));
     background-clip: text;
@@ -89,9 +101,7 @@ a {
 main div {
     display: flex;
     justify-content: space-between;
-    /* background-color: var(--warm-yellow); */
     padding: 10px;
-    margin: 10px;
 }
 
 
@@ -140,4 +150,20 @@ main div {
     -webkit-background-clip: text;
     color: transparent;
     font-size: 24px;
+}
+
+
+
+#theme-picker {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+#theme-picker span {
+    width: 50px;
+    height: 50px;
+}
+.hidden {
+    display: none !important;
 }

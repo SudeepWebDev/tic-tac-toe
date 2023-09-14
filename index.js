@@ -49,3 +49,35 @@ function checkWinner() {
         statusE.textContent = "It's a draw!";
     }
 }
+
+
+// Theme setting
+document.addEventListener("DOMContentLoaded", function () {
+    const circle = document.querySelector(".circle");
+    const themePicker = document.getElementById("theme-picker");
+
+    const savedTheme = localStorage.getItem("selectedTheme");
+
+    function setTheme(bgColor) {
+        document.body.style.backgroundColor = bgColor;
+    }
+
+    circle.addEventListener("click", function () {
+        themePicker.classList.toggle("hidden");
+    });
+
+    themePicker.addEventListener("click", function (event) {
+        if (event.target.classList.contains("theme-picker-item")) {
+            const bgColor = event.target.getAttribute("data-bg-color");
+            setTheme(bgColor);
+
+            localStorage.setItem("selectedTheme", JSON.stringify({ bgColor }));
+            themePicker.classList.add("hidden");
+        }
+    });
+
+    if (savedTheme) {
+        const { bgColor } = JSON.parse(savedTheme);
+        setTheme(bgColor);
+    }
+});

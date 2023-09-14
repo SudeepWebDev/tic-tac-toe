@@ -19,7 +19,16 @@
         <div class="header-actions">
             <div class="login-btn btn"><i class="fas fa-sign-in-alt"></i> <span class='login-txt'>Login</span></div>
             <div class="setting"><i class="fas fa-cog "></i></div>
-            <div class="theme" id="themeToggle"><i class="fas fa-moon"></i></div>
+            <div class="theme" id="themeToggle">
+                <div class="circle"></div>
+                <div id="theme-picker" class="hidden">
+                    <span class="theme-picker-item" data-bg-color="rgb(249, 202, 36)"
+                        style="background-color: rgb(249, 202, 36);"></span>
+                    <span class="theme-picker-item" data-bg-color="rgb(4, 39, 67)"
+                        style="background-color: rgb(4, 39, 67);"></span>
+
+                </div>
+            </div>
             <div class="notification-icon"><i class="fas fa-bell "></i></div>
         </div>
 
@@ -39,7 +48,7 @@
                 <div class="cell"></div>
             </div>
             <button id="reset" class="btn">Reset</button>
-            
+
         </div>
     </main>
 
