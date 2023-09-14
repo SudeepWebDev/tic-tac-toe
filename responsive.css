@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    .login-txt {
+        display: none;
+    }
+
+    .btn {
+        width: fit-content;
+    }
+
+    section {
+        margin: 40px 10px;
+    }
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+}

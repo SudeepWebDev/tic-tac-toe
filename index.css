@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* user-select: none; */
+}
+
+
+
+:root {
+    --p-bg-color-1: rgb(10, 20, 110);
+    --p-bg-color-2: #0071EB;
+    --white: white;
+    --blue: blue;
+    --black: black;
+    --cornflowerblue: cornflowerblue;
+    --warm-yellow: rgb(249, 202, 36);
+    --vibrant-orange: rgb(240, 147, 43);
+
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 10;
+
+}
+
+header div {
+    padding: 10px;
+}
+
+header #menu_bar {
+    display: none;
+}
+
+.logo {
+    background: linear-gradient(to bottom right, var(--p-bg-color-1), var(--p-bg-color-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+header .header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-actions div {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    border: 1px solid var(--p-bg-color-2);
+    background-color: var(--white);
+    border-radius: 50px;
+    color: var(--p-bg-color-2);
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+}
+
+.btn:hover {
+    border: 1px solid var(--p-bg-color-2);
+    background-color: var(--p-bg-color-2);
+    color: var(--white);
+}
+
+
+main div {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: var(--warm-yellow); */
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+.cell.x {
+    color: #3498db;
+}
+
+.cell.o {
+    color: #e74c3c;
+}
+
+#status {
+    background: linear-gradient(to bottom right, var(--p-bg-color-1), var(--p-bg-color-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+}

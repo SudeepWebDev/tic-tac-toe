@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable = no">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Tic-Tac-Toe</div>
+        <div class="search-box" style="display: none;">
+
+        </div>
+        <div class="header-actions">
+            <div class="login-btn btn"><i class="fas fa-sign-in-alt"></i> <span class='login-txt'>Login</span></div>
+            <div class="setting"><i class="fas fa-cog "></i></div>
+            <div class="theme" id="themeToggle"><i class="fas fa-moon"></i></div>
+            <div class="notification-icon"><i class="fas fa-bell "></i></div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <p id="status">Player X's turn</p>
+            <div class="board" id="board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <button id="reset" class="btn">Reset</button>
+            
+        </div>
+    </main>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
